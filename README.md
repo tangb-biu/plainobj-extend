@@ -20,16 +20,17 @@
     }
 
     var newa = util.deepCopy(a);
-    
+    
     assert.notEqual(newa, a, "两个不同的对象");
-    
+    
     assert.equal(newa.toString(), a.toString(), "对象的toString相同");
     
-    var b = {
+    var b = {
       m:[{x:'c'}],
       
       l: 'ad'
     }
     
     var c = util.extend(a, b);
+    
     console.log(c);
