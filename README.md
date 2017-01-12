@@ -20,8 +20,10 @@
     }
 
     var newa = util.deepCopy(a);
-    assert.notEqual(newa, a, "两个不同的对象");
-    assert.equal(newa.toString(), a.toString(), "对象的toString相同");
+    
+    assert.notEqual(newa, a, "两个不同的对象");
+    
+    assert.equal(newa.toString(), a.toString(), "对象的toString相同");
     
     var b = {
       m:[{x:'c'}],
